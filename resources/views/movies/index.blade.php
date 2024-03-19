@@ -8,13 +8,12 @@
       <div class="row g-4">
         @forelse ($movies as $movie)
             <div class="col-3">
+              <a href="{{route('movies.show', $movie)}}">
                 <div class="card p-3">
-                    <h3>{{$movie->title}}</h3>
-                    <p>{{$movie->original_title}}</p>
-                    <p>{{$movie->nationality}}</p>
-                    <p>{{$movie->date}}</p>
-                    <p>{{$movie->vote}}</p>
+                  <h3>{{$movie->title}}</h3>
                 </div>
+              </a>
+              
             </div>
         @empty
             No movies found!
