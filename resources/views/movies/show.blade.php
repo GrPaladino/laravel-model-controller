@@ -5,14 +5,16 @@
 @section('main-content')
   <section>
     <div class="container py-4">
-      <div class="col-3">
+      <div class="col-4">
         <div class="card p-3">
-            <h3>Titolo: {{$movie->title}}</h3>
-            <p>Titolo Originale: {{$movie->original_title}}</p>
-            <p>Nazionalitá: {{$movie->nationality}}</p>
-            <p>Data di uscita: {{$movie->date}}</p>
-            <p>Voto: {{$movie->vote}}</p>
-          </div>
+            
+            <ul>
+                <li><bold>Titolo:</bold> {{$movie->title}}</li>
+                <li><bold>Titolo Originale:</bold> {{$movie->original_title}}</li>
+                <li><bold>Nazionalitá:</bold> {{$movie->nationality}}</li>
+                <li>Data Uscita: {{$movie->date}}</li>
+                <li><bold>Voto:</bold> {{$movie->vote}}</li>
+            </ul>
       </div>
     </div>
   </section>
